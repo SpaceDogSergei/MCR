@@ -1,0 +1,228 @@
+$pai_width: 30px;
+$pai_height: 42px;
+$pai_width_big: 40px;
+$pai_height_big: 56px;
+
+body {
+  width: 800px;
+  margin: auto;
+  background: black;
+  color: white;
+  font-size: 12px;
+  font-family: "Verdana", sans-serif;
+}
+
+.game {
+  height: 840px;
+  background: #036;
+
+  > * {
+    position: absolute;
+    margin: 0px;
+    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+  }
+}
+
+.loadData {
+  display: none;
+}
+
+.chang {
+  width: 180px;
+  height: 180px;
+  background: #111;
+  border-radius: 4px;
+  transform-origin: 0% 0%;
+  transform: translate(310px, 310px);
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: translate(310px, 310px);
+  font-family: "Georgia", sans-serif;
+}
+
+.jushu {
+  padding: 4px;
+  font-size: 32px;
+  font-family: DFPLeiSho-SB, serif;
+  vertical-align: top;
+  transform-origin: 0% 0%;
+  transform: translate(38px, 60px);
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: translate(38px, 60px);
+}
+
+.shan {
+  padding: 6px;
+  transform: translate(78px, 50px);
+}
+
+.defenAll {
+  clear: both;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.defen {
+  position: absolute;
+  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+
+  &--zijia {
+    text-align: center;
+    transform: translate(73px, 14px);
+    -webkit-transform: translate(73px, 14px);
+  }
+
+  &--xiajia {
+    text-align: right;
+    transform: translate(146px, -26px) rotate(270deg);
+    -webkit-transform: translate(146px, -26px) rotate(270deg);
+  }
+
+  &--duimian {
+    text-align: center;
+    transform: translate(108px, -98px) rotate(180deg);
+    -webkit-transform: translate(108px, -98px) rotate(180deg);
+  }
+
+  &--shangjia {
+    text-align: left;
+    transform: translate(34px, -60px) rotate(90deg);
+    -webkit-transform: translate(34px, -60px) rotate(90deg);
+  }
+}
+
+.shoupai {
+  &--zijia {
+    width: 680px;
+    height: 74px;
+    transform: translate(120px, 766px);
+    -webkit-transform: translate(120px, 766px);
+  }
+
+  &--xiajia {
+    width: 640px;
+    height: 60px;
+    transform: translate(740px, 640px) rotate(270deg);
+    -webkit-transform: translate(740px, 640px) rotate(270deg);
+  }
+
+  &--duimian {
+    width: 680px;
+    height: 60px;
+    transform: translate(680px, 60px) rotate(180deg);
+    -webkit-transform: translate(680px, 60px) rotate(180deg);
+  }
+
+  &--shangjia {
+    width: 640px;
+    height: 60px;
+    transform: translate(60px, 200px) rotate(90deg);
+    -webkit-transform: translate(60px, 200px) rotate(90deg);
+  }
+}
+
+.shouli {
+  margin-top: 18px;
+  float: left;
+  line-height: 0;
+}
+
+.fulou {
+  margin-top: 18px;
+  float: right;
+  line-height: 0;
+
+  &__mianzi {
+    white-space: nowrap;
+    margin-left: 2px;
+    float: right;
+  }
+
+  &--zijia {
+    margin-top: 32px;
+  }
+}
+
+.he {
+  width: 320px;
+  height: $pai_height * 5;
+  line-height: 0px;
+
+  &__break {
+    display: block;
+    width: 2px;
+  }
+
+  &--zijia {
+    transform: translate(310px, 500px);
+    -webkit-transform: translate(310px, 500px);
+  }
+
+  &--xiajia {
+    transform: translate(500px, 490px) rotate(270deg);
+    -webkit-transform: translate(500px, 490px) rotate(270deg);
+  }
+
+  &--duimian {
+    transform: translate(490px, 300px) rotate(180deg);
+    -webkit-transform: translate(490px, 300px) rotate(180deg);
+  }
+
+  &--shangjia {
+    transform: translate(300px, 310px) rotate(90deg);
+    -webkit-transform: translate(300px, 310px) rotate(90deg);
+  }
+}
+
+.pai {
+  &--shouli,
+  &--fulou,
+  &--he {
+    width: $pai_width;
+    height: $pai_height;
+  }
+
+  &--zijiaShouli {
+    width: $pai_width_big;
+    height: $pai_height_big;
+  }
+}
+
+.paiWrapZimo {
+  display: inline-block;
+  margin-left: 4px;
+  line-height: 0;
+}
+
+.paiWrapRotate {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  white-space: nowrap;
+  text-align: left;
+  transform-origin: 0% 0%;
+  transform: rotate(270deg) translate(-42px, 0);
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotate(270deg) translate(-42px, 0);
+}
+
+.lunban {
+  color: #0ff;
+}
+
+.UI {
+  width: 580px;
+  text-align: right;
+  transform: translate(120px, 720px);
+  -webkit-transform: translate(120px, 720px);
+
+  &__button {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 16px;
+    background: black;
+    border-radius: 5px;
+  }
+}
+

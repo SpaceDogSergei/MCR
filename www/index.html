@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=800,initial-scale=1">
+    <title>一人で中国麻将</title>
+    <meta name="description" content="HTML5 で動作する中国麻将アプリ">
+    <meta property="og:title" content="一人で中国麻将">
+    <meta property="og:description" content="HTML5 で動作する中国麻将アプリ">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="navi">
+      <a href="index.html">対戦</a>
+    </div>
+    <div class="loadData" id="loadData">
+      <img class="pai" data-pai="m1" src="img/m1.gif">
+      <img class="pai" data-pai="m2" src="img/m2.gif">
+      <img class="pai" data-pai="m3" src="img/m3.gif">
+      <img class="pai" data-pai="m4" src="img/m4.gif">
+      <img class="pai" data-pai="m5" src="img/m5.gif">
+      <img class="pai" data-pai="m6" src="img/m6.gif">
+      <img class="pai" data-pai="m7" src="img/m7.gif">
+      <img class="pai" data-pai="m8" src="img/m8.gif">
+      <img class="pai" data-pai="m9" src="img/m9.gif">
+      <br>
+      <img class="pai" data-pai="p1" src="img/p1.gif">
+      <img class="pai" data-pai="p2" src="img/p2.gif">
+      <img class="pai" data-pai="p3" src="img/p3.gif">
+      <img class="pai" data-pai="p4" src="img/p4.gif">
+      <img class="pai" data-pai="p5" src="img/p5.gif">
+      <img class="pai" data-pai="p6" src="img/p6.gif">
+      <img class="pai" data-pai="p7" src="img/p7.gif">
+      <img class="pai" data-pai="p8" src="img/p8.gif">
+      <img class="pai" data-pai="p9" src="img/p9.gif">
+      <br>
+      <img class="pai" data-pai="s1" src="img/s1.gif">
+      <img class="pai" data-pai="s2" src="img/s2.gif">
+      <img class="pai" data-pai="s3" src="img/s3.gif">
+      <img class="pai" data-pai="s4" src="img/s4.gif">
+      <img class="pai" data-pai="s5" src="img/s5.gif">
+      <img class="pai" data-pai="s6" src="img/s6.gif">
+      <img class="pai" data-pai="s7" src="img/s7.gif">
+      <img class="pai" data-pai="s8" src="img/s8.gif">
+      <img class="pai" data-pai="s9" src="img/s9.gif">
+      <br>
+      <img class="pai" data-pai="z1" src="img/z1.gif">
+      <img class="pai" data-pai="z2" src="img/z2.gif">
+      <img class="pai" data-pai="z3" src="img/z3.gif">
+      <img class="pai" data-pai="z4" src="img/z4.gif">
+      <img class="pai" data-pai="z5" src="img/z5.gif">
+      <img class="pai" data-pai="z6" src="img/z6.gif">
+      <img class="pai" data-pai="z7" src="img/z7.gif">
+      <img class="pai" data-pai="_" src="img/pai.gif">
+      <br>
+    </div>
+    <div class="game" id="game">
+      <div class="chang">
+        <div class="jushu">東一局</div>
+        <div class="shan">
+          <span class="paishu">83</span>
+        </div>
+        <div class="defenAll">
+          <span class="defen defen--zijia lunban">東: 0</span>
+          <span class="defen defen--xiajia">南: 0</span>
+          <span class="defen defen--duimian">西: 0</span>
+          <span class="defen defen--shangjia">北: 0</span>
+        </div>
+      </div>
+      <div class="shoupai shoupai--xiajia">
+        <div class="shouli"></div>
+        <div class="fulou"></div>
+      </div>
+      <div class="he he--xiajia"></div>
+      <div class="shoupai shoupai--duimian">
+        <div class="shouli"></div>
+        <div class="fulou"></div>
+      </div>
+      <div class="he he--duimian"></div>
+      <div class="shoupai shoupai--shangjia">
+        <div class="shouli"></div>
+        <div class="fulou"></div>
+      </div>
+      <div class="he he--shangjia"></div>
+      <div class="shoupai shoupai--zijia">
+        <div class="shouli"></div>
+        <div class="fulou fulou--zijia"></div>
+      </div>
+      <div class="he he--zijia"></div>
+      <div class="UI">
+        <span class="UI__button chi">チー</span>
+        <span class="UI__button peng">ポン</span>
+        <span class="UI__button gang">カン</span>
+        <span class="UI__button hu">フー</span>
+      </div>
+    </div>
+  </body>
+</html>
