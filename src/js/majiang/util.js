@@ -1,4 +1,4 @@
 "use strict";
 
 module.exports = require('./util/xiangting');
-// module.exports.hule = require('./util/hule');
+module.exports.hule = require('./util/hule');

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=800,initial-scale=1">
+    <title>一人で中国麻雀 - 和了点計算</title>
+    <meta name="description" content="中国麻雀の和了点計算">
+  </head>
+  <body>
+    <form>
+      <div>牌姿: 
+        <input name="paistr" type="text">
+        <input type="submit" value="決定">
+        <input type="reset" value="クリア">
+      </div>
+      <div><span>
+          <input name="zimo" type="radio" value="1">ツモ
+          <input name="zimo" type="radio" value="0" checked>ロン</span><span> 場風: 
+          <select name="zhuangfeng">
+            <option value="0" selected>東</option>
+            <option value="1">南</option>
+            <option value="2">西</option>
+            <option value="3">北</option>
+          </select> 自風: 
+          <select name="menfeng">
+            <option value="0">東</option>
+            <option value="1" selected>南</option>
+            <option value="2">西</option>
+            <option value="3">北</option>
+          </select></span></div>
+      <div><span>
+          <input name="haidi" type="checkbox" value="1">海底 
+          <input name="lingshang" type="checkbox" value="1">嶺上 
+          <input name="qianggang" type="checkbox" value="1">槍槓 </span></div>
+    </form>
+    <hr>
+    <div class="huledialog hide">
+      <div class="hule">
+        <div class="shoupai">
+          <div class="bingpai"></div>
+          <div class="fulou"></div>
+        </div>
+        <table class="hupai">
+          <tr class="r_hupai">
+            <td class="name"></td>
+            <td class="fanshu"></td>
+          </tr>
+          <tr class="r_defen">
+            <td class="defen" colspan="2"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

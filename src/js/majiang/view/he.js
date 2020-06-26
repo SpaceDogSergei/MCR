@@ -1,8 +1,19 @@
+"use strict";
+
+const $ = require('jquery');
+const Majiang = { View: { pai: require('./pai') } };
+
 module.exports = class He {
 
-constructor(node, he) {
-  this._node = node;
-  this._he   = he;
+constructor(node, he, open) {
+  this._node = {
+    hepai: $('.he', root),
+    // TODO: huapai
+    // huapai: $('.huapai', root),
+  }
+  this._he = he;
+  this._open = open;
+  // TODO: huapai
 }
 
 static imgHtml(pai = '', htmlClass = '') {
@@ -12,8 +23,10 @@ static imgHtml(pai = '', htmlClass = '') {
          : '<img class="' + htmlClass + '" src="img/pai.gif" />';
 }
 
-redraw() {
-  this._node.empty();
+redraw(open) {
+  if (open != null) this._open = open;
+
+  this._node.hepai.empty();
   var i = 0;
   for (var pai of this._he._pai) {
     if (pai.match(/[\-\+\=]$/)) continue;

@@ -1,3 +1,9 @@
+"use strict";
+
+const $ = require('jquery');
+
+const Majiang = { View: { pai: require('./pai') } };
+
 module.exports = class Shoupai {
 
 constructor(node, shoupai, open) {
